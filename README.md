@@ -53,3 +53,8 @@ hoặc (nếu sử dụng yarn)
 yarn start
 ```
 ## Tính năng chính phần mềm
+- Lấy câu đố theo 3 mức độ: dễ, trung bình, khó.
+- Người chơi có thể điền vào các ô trống bằng bàn phím số hoặc bàn phím ảo trên màn hình.
+- Tính thời gian người chơi giải và có thể tạm dừng khi đang chơi.
+- Người chơi có thể kiểm tra câu trả lời của mình, nếu đúng điểm sẽ tự động được lưu.
+- Hiển thị danh sách điểm cao theo mức độ.
