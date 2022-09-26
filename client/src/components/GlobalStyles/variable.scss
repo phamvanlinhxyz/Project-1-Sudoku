@@ -1,0 +1,64 @@
+:root {
+  // Màu chính
+  --blue-prim: #0077b6;
+  --blue-second: #00679e;
+  --red-prim: #ef233c;
+  --border-prim: #e6e6e6;
+  --note-prim: #6c757d;
+  // Màu ô số
+  --cell-bg: #edf2fb;
+  --cell-same: #c3e2f4;
+  --cell-not-dup: #ddecf6;
+  --cell-focus: #acd2f1;
+  --cell-error: #fff0f3;
+  // Màu toast
+  --toast-success: #02c39a;
+  --toast-danger: #ef233c;
+  --toast-warning: #ffd100;
+  --toast-info: #0466c8;
+  // Màu nền và chữ
+  --light: #fff;
+  --light-color: #023047;
+  // Màu disable
+  --disable-bg: #e9ecef;
+  --disable-color: #6c757d;
+  // Màu top điểm
+  --first-score-bg: #ffc300;
+  --first-score-bd: #f4e409;
+  --second-score-bg: #a1acb5;
+  --second-score-bd: #c8d1d9;
+  --third-score-bg: #e85d04;
+  --third-score-bd: #f48c06;
+  // Màu nền và chữ tối
+  --dark: #1e1e1e;
+  --dark-color: #fff;
+  // Màu chính chế độ tối
+  --dark-blue-prim: #0096c7;
+  --dark-blue-second: #0077b6;
+  --dark-red-prim: #ef233c;
+  --dark-border-prim: #495057;
+  // Màu ô số chế độ tối
+  --dark-cell-bg: #444c54;
+  --dark-cell-same: #25292d;
+  --dark-cell-not-dup: #343a40;
+  --dark-cell-focus: #25292d;
+  // Màu toast chế độ tối
+  --dark-toast-success: #02c39a;
+  --dark-toast-danger: #ef233c;
+  --dark-toast-warning: #ffd100;
+  --dark-toast-info: #0466c8;
+  --dark-disable-bg: #e9ecef;
+  --dark-disable-color: #6c757d;
+  --dark-note-prim: #adb5bd;
+  // Màu disable chế độ tối
+  --dark-disable-bg: #495057;
+  --dark-disable-color: #adb5bd;
+  // Kích thước ô số
+  --cell-wl: 50px;
+  --cell-wm: 40px;
+  --cell-ws: 30px;
+  // Kích thước numpad
+  --numpad-wl: 60px;
+  --numpad-wm: 50px;
+  --numpad-ws: 40px;
+}

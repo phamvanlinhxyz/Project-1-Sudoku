@@ -1,0 +1,32 @@
+.grid {
+  margin-right: 0;
+  display: grid;
+  gap: 6px;
+}
+
+.gridRow {
+  display: grid;
+  gap: 6px;
+  grid-template-columns: repeat(9, auto);
+}
+
+.gridRow:nth-child(3n) {
+  margin-bottom: 10px;
+}
+
+.gridRow:nth-child(9) {
+  margin-bottom: 0;
+}
+
+.gridCellWrap:nth-child(3n) {
+  margin-right: 10px;
+}
+
+.gridCellWrap {
+  border: none;
+  outline: none;
+}
+
+.gridCellWrap:nth-child(9) {
+  margin-right: 0;
+}

@@ -1,0 +1,15 @@
+.baseLoadingBG {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.baseLoading {
+  width: 100px;
+  height: 100px;
+}

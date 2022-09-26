@@ -1,0 +1,90 @@
+.startPage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.startPageInput {
+  height: 48px;
+  width: 240px;
+  outline: none;
+  background-color: var(--cell-bg);
+  border: 2px solid transparent;
+  padding: 0 8px;
+  border-radius: 6px;
+  font-size: 20px;
+  text-align: center;
+  transition: all ease 0.2s;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.startPageInput:hover,
+.startPageInput:focus {
+  border-color: var(--blue-second) !important;
+}
+
+.startPageButton {
+  height: 48px;
+  width: 240px;
+  outline: none;
+  background-color: var(--cell-bg);
+  border: 2px solid transparent;
+  padding: 0 8px;
+  border-radius: 6px;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.startPageButton:hover,
+.startPageButton:focus {
+  border-color: var(--blue-second);
+}
+
+.buttonStart {
+  background-color: var(--blue-prim);
+  color: var(--light);
+  margin-bottom: 0;
+}
+
+.buttonStart:hover,
+.buttonStart:focus {
+  background-color: var(--blue-second);
+  border-color: var(--blue-second);
+}
+
+.inputError,
+.inputError:hover,
+.inputError:focus {
+  border-color: var(--red-prim);
+}
+
+:global(.darkMode) {
+  .startPageInput,
+  .startPageButton {
+    background-color: var(--dark-cell-bg);
+    color: var(--dark-color);
+  }
+
+  .startPageInput:hover,
+  .startPageButton:hover,
+  .startPageInput:focus,
+  .startPageButton:focus {
+    border-color: var(--dark-blue-second);
+  }
+
+  .buttonStart {
+    background-color: var(--dark-blue-prim);
+  }
+
+  .buttonStart:hover,
+  .buttonStart:focus {
+    background-color: var(--dark-blue-second);
+  }
+}

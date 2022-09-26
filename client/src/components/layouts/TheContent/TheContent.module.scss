@@ -1,0 +1,21 @@
+.theContent {
+  flex: 1;
+  overflow: auto;
+}
+
+.theContentInner {
+  padding: 32px 16px;
+  height: 100%;
+  position: relative;
+}
+
+@media screen and (min-width: 1200px) {
+  .theContentInner {
+    width: 1200px;
+    margin: auto;
+  }
+
+  .theContent {
+    overflow: auto;
+  }
+}

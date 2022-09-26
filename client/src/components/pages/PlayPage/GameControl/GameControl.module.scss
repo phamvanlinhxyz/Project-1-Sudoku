@@ -1,0 +1,194 @@
+.gameControl {
+  padding-left: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.gameInfo {
+  width: calc(100% + 8px);
+  display: flex;
+}
+
+.gameInfo div,
+.newGameButton,
+.checkButton,
+.pauseButton,
+.noteButton {
+  width: calc(50% - 8px);
+  margin-right: 8px;
+  background-color: var(--cell-bg);
+  border-radius: 6px;
+  font-size: 16px;
+  padding: 12px 0;
+  text-align: center;
+  margin-bottom: 16px;
+  font-weight: 600;
+  border: 2px solid transparent;
+}
+
+.checkButton:hover,
+.pauseButton:hover,
+.checkButton:focus,
+.pauseButton:focus,
+.noteButton:hover,
+.noteButton:focus {
+  border-color: var(--blue-second);
+  cursor: url(../../../../assets/images/pointer.png), auto;
+}
+
+.newGameButton,
+.checkButton {
+  margin-bottom: 8px;
+}
+
+.newGameButton,
+.isNote {
+  background-color: var(--blue-prim);
+  color: var(--dark-color);
+}
+
+.newGameButton:hover,
+.newGameButton:focus,
+.isNote:hover,
+.isNote:focus {
+  background-color: var(--blue-second);
+  border-color: var(--blue-second);
+}
+
+.pauseButton {
+  // width: calc(100% + 8px);
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.pauseButton span {
+  position: absolute;
+}
+
+.pauseIcon {
+  position: absolute;
+  right: 12px;
+  font-size: 20px;
+  color: var(--blue-prim);
+}
+
+.pauseButton:hover,
+.pauseButton:focus {
+  .pauseIcon {
+    color: var(--blue-second);
+  }
+}
+
+.controlButton {
+  width: calc(100% + 8px);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.numPad {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 8px;
+}
+
+.numPadItem {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  background-color: var(--cell-bg);
+  color: var(--blue-prim);
+  font-size: 36px;
+  font-weight: 600;
+  cursor: url(../../../../assets/images/pointer.png), auto;
+}
+
+.controlDisable .gameInfo div,
+.controlDisable .newGameButton,
+.controlDisable .checkButton,
+.controlDisable .pauseButton,
+.controlDisable .numPadItem,
+.controlDisable .noteButton {
+  background-color: var(--disable-bg);
+  color: var(--disable-color);
+  border-color: transparent !important;
+  cursor: url(../../../../assets/images/default.png), auto;
+}
+
+.controlDisable {
+  .pauseIcon,
+  .pauseButton:hover .pauseIcon {
+    color: var(--disable-color);
+  }
+}
+
+:global(.darkMode) {
+  .gameInfo div,
+  .newGameButton,
+  .checkButton,
+  .pauseButton,
+  .noteButton {
+    background-color: var(--dark-cell-bg);
+    color: var(--dark-color);
+  }
+
+  .checkButton:hover,
+  .pauseButton:hover,
+  .checkButton:focus,
+  .pauseButton:focus,
+  .noteButton:hover,
+  .noteButton:focus {
+    border-color: var(--dark-blue-second);
+  }
+
+  .newGameButton,
+  .isNote {
+    background-color: var(--dark-blue-prim);
+  }
+
+  .newGameButton:hover,
+  .newGameButton:focus,
+  .isNote:hover,
+  .isNote:focus {
+    background-color: var(--dark-blue-second);
+    border-color: var(--dark-blue-second);
+  }
+
+  .pauseIcon {
+    color: var(--dark-blue-prim);
+  }
+
+  .pauseButton:hover,
+  .pauseButton:focus {
+    .pauseIcon {
+      color: var(--dark-blue-second);
+    }
+  }
+
+  .numPadItem {
+    background-color: var(--dark-cell-bg);
+    color: var(--dark-color);
+  }
+
+  .controlDisable .gameInfo div,
+  .controlDisable .newGameButton,
+  .controlDisable .checkButton,
+  .controlDisable .pauseButton,
+  .controlDisable .numPadItem,
+  .controlDisable .noteButton {
+    background-color: var(--dark-disable-bg);
+    color: var(--dark-disable-color);
+    border-color: transparent !important;
+    cursor: url(../../../../assets/images/default.png), auto;
+  }
+
+  .controlDisable {
+    .pauseIcon,
+    .pauseButton:hover .pauseIcon {
+      color: var(--dark-disable-color);
+    }
+  }
+}

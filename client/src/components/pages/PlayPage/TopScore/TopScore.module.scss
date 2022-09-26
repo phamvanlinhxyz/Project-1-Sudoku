@@ -1,0 +1,73 @@
+.topScore {
+  flex: 1;
+  margin-left: 24px;
+  background-color: var(--cell-bg);
+  border-radius: 6px;
+}
+
+.topScoreTitle {
+  text-align: center;
+  margin-block: 12px;
+}
+
+.scoreItem {
+  display: flex;
+  padding-inline: 12px;
+}
+
+.scoreInfo {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.scoreItem {
+  padding: 12px 16px;
+}
+
+.scoreIndex {
+  margin-right: 16px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid transparent;
+  background-color: var(--blue-second);
+  color: var(--dark-color);
+  font-size: 12px;
+}
+
+.first .scoreIndex {
+  background-color: var(--first-score-bg) !important;
+  border-color: var(--first-score-bd);
+}
+
+.second .scoreIndex {
+  background-color: var(--second-score-bg) !important;
+  border-color: var(--second-score-bd);
+}
+
+.third .scoreIndex {
+  background-color: var(--third-score-bg) !important;
+  border-color: var(--third-score-bd);
+}
+
+@media screen and (max-width: 1200px) {
+  .topScore {
+    display: none;
+  }
+}
+
+:global(.darkMode) {
+  .topScore {
+    background-color: var(--dark-cell-bg);
+    color: var(--dark-color);
+  }
+
+  .scoreIndex {
+    background-color: var(--dark-blue-second);
+  }
+}
